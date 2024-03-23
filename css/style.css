@@ -1,6 +1,11 @@
+html {
+    overflow-x: hidden;
+}
+
 * {  /* Tirar o padding e margin da pagina */
     padding: 0; 
     margin: 0;
+    box-sizing: border-box;
 }
     
 body {
@@ -17,7 +22,8 @@ header {
     flex-direction: row;  /* Display flex em linha */
     justify-content: space-between;  /* Os elementos ficarem divididos */
     align-items: center;  /* alinhar os elementos no centro */
-    padding: 40px 2%;  /* 40px cima e baixo e 2% nas laterais */
+    padding: 1rem 2%;  /* 40px cima e baixo e 2% nas laterais */
+    height: 10%;
 }
 
 .logo h1{  /* FECAFMUSIC */
@@ -67,11 +73,13 @@ main {
     background-color: #01041B;
     display: flex;
     flex-direction: row;  /* flex em linha */
+    justify-content: center;
+    align-items: center;
 }
 
 main img {  /* imagem */
-    width: 680px;  /* largura */
-    height: 475px; /* altura */
+    width: 100%;
+    flex: 1;
 }
 
 main .txt_music {
@@ -84,6 +92,7 @@ main h1 {
 }
 
 .esquerda_main {
+    flex: 1;
     padding: 20px;  /* padding da classe */
     margin-left: 25px;  /* margem esquerdo da classe */
 }
@@ -93,6 +102,7 @@ main p {
     margin-top: 25px;  /* margem superior do paragrafo */
     text-align: justify;  /* texto justificado */
 }
+
 
 .dounload, .free_trial {  /* 2 botões */
     margin-top: 30px;  /* margem superior */
